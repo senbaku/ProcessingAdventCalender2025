@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>テーマで遊ぶ30のお題</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- お題リスト用（必要であれば style.css へ移動OK） -->
+  <style>
+    .theme-list {
+      padding-left: 1.2em;
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    .theme-list li+li {
+      margin-top: 8px;
+    }
+
+    .theme-title {
+      font-weight: bold;
+    }
+
+    .theme-desc {
+      margin: 2px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site">
+    <header>
+<div class="logo">
+  <a href="index.html">
+    <img src="image/logo.png" alt="site logo">
+  </a>
+</div>
+      <p>30 Creative Coding Prompts</p>
+    </header>
+
+    <div class="main-wrapper">
+      <!-- ナビカラム -->
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">about</a></li>
+          <li><a href="theme1.html">コードで遊ぶ30のお題</a></li>
+          <li><a href="theme2.html" class="current">テーマで遊ぶ30のお題</a></li>
+        </ul>
+
+        <div class="box">
+          <div>counter</div>
+          <div id="counter" class="counter">000000</div>
+        </div>
+
+        <div class="box">
+          <div>web拍手</div>
+          <button id="clap-button">ぱちぱちする</button>
+          <div id="clap-message" style="margin-top:4px;font-size:11px;"></div>
+        </div>
+
+        <!-- <div class="box">
+          <div>link</div>
+          <div class="banners">
+            <a href="#" target="_blank">
+              <img src="banner1.png" alt="banner1">
+            </a>
+            <a href="#" target="_blank">
+              <img src="banner2.png" alt="banner2">
+            </a>
+          </div>
+        </div> -->
+      </nav>
+
+      <!-- 本文エリア -->
+         <div class="main-content"></div>
+      <article>
+        <h1>◆ テーマで遊ぶ30のお題</h1>
+        <p>いろんなジャンルを横断する30題のお題セットです。<br>いろいろな題材・モチーフからイメージを膨らませてください！<br>好きな順番で使ったり、1日1個ずつ進めたり、ご自由にどうぞ。</p>
+<br>
+        <ol class="theme-list">
+
+          <li>
+            <div class="theme-title">自然のパターン</div>
+            <p class="theme-desc">（例：木の葉、雲、山脈）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">都市の風景</div>
+            <p class="theme-desc">（例：ビル群、夜景、通り）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">水の動き</div>
+            <p class="theme-desc">（例：波、滝、雨滴）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">幾何学的形</div>
+            <p class="theme-desc">（例：多角形、円、スパイラル）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">抽象的アート</div>
+            <p class="theme-desc">（例：カラフルなブロック、ストローク）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">星空と宇宙</div>
+            <p class="theme-desc">（例：星座、銀河、宇宙旅行）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">7. 音楽とリズム</div>
+            <p class="theme-desc">（例：楽器、旋律、リズムのイメージ）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">テキストとタイポグラフィ</div>
+            <p class="theme-desc">（例：詩、名言、ランダムな単語）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">色の変化</div>
+            <p class="theme-desc">（例：色相のグラデーション、コントラスト）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">動物や生物</div>
+            <p class="theme-desc">（例：鳥、魚、昆虫）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">季節と気候</div>
+            <p class="theme-desc">（例：春の花、秋の葉、冬景色）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">ファンタジーと神話</div>
+            <p class="theme-desc">（例：伝説の生物、魔法の世界）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">時間の経過</div>
+            <p class="theme-desc">（例：時計、時間の流れ、過去と未来）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">人間と人物</div>
+            <p class="theme-desc">（例：人のシルエット、群像、表情）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">科学と技術</div>
+            <p class="theme-desc">（例：機械、ロボット、データ可視化）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">日常生活</div>
+            <p class="theme-desc">（例：家具、食べ物、街角）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">交通と移動</div>
+            <p class="theme-desc">（例：車、飛行機、自転車）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">スポーツとアクティビティ</div>
+            <p class="theme-desc">（例：サッカー、ダンス、ヨガ）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">映画とテレビ</div>
+            <p class="theme-desc">（例：映画のシーン、キャラクター）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">本と文学</div>
+            <p class="theme-desc">（例：小説の一節、詩、ファンタジー）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">アーケードとビデオゲーム</div>
+            <p class="theme-desc">（例：レトロゲーム、現代ゲーム）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">パーティーと祭り</div>
+            <p class="theme-desc">（例：花火、コンサート、カーニバル）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">恋愛と感情</div>
+            <p class="theme-desc">（例：ハート、感情表現）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">夢と幻想</div>
+            <p class="theme-desc">（例：夢の世界、超現実的なイメージ）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">伝統と文化</div>
+            <p class="theme-desc">（例：祭り、伝統衣装、文化的シンボル）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">構造と建築</div>
+            <p class="theme-desc">（例：橋、建物、建設）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">宇宙と未来</div>
+            <p class="theme-desc">（例：エイリアン、未来都市、宇宙船）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">メタ世界</div>
+            <p class="theme-desc">（例：鏡世界、作品世界、自己参照的表現）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">心象風景</div>
+            <p class="theme-desc">（例：感情・記憶・体験から生まれる景色）</p>
+          </li>
+
+          <li>
+            <div class="theme-title">フィナーレ</div>
+            <p class="theme-desc">（これまでのテーマを融合した総合作品）</p>
+          </li>
+
+        </ol>
+      </article>
+        </div>
+    </div>
+
+    <footer>
+      &copy; 2025 @senbaku
+    </footer>
+  </div>
+
+  <script>
+    // カウンター
+    (function () {
+      var key = "simple_counter";
+      var n = parseInt(localStorage.getItem(key) || "0", 10) + 1;
+      localStorage.setItem(key, n);
+      var s = String(n).padStart(6, "0");
+      document.getElementById("counter").textContent = s;
+    })();
+
+    // web拍手
+    document.getElementById("clap-button").addEventListener("click", function () {
+      var msg = document.getElementById("clap-message");
+      msg.textContent = "ぱちぱちありがとう！";
+    });
+  </script>
+  <script>
+  function randomCounter() {
+    const counterEl = document.getElementById("counter");
+
+    // 下4桁の通常ランダム（0〜9999）
+    let n = Math.floor(Math.random() * 10000);
+
+    // 1/200 の確率で「当たり数字」
+    if (Math.random() < 1/200) {
+      const special = [
+        777, 888, 999,
+        1111, 2222, 3333,
+        4444, 5555, 6666,
+        7777, 8888, 9999
+      ];
+      n = special[Math.floor(Math.random() * special.length)];
+
+      // 当たり演出
+      counterEl.classList.add("special-hit");
+      setTimeout(() => counterEl.classList.remove("special-hit"), 1200);
+    }
+
+    // 表示は「00 + 4桁の数字」
+    const display = "00" + String(n).padStart(4, "0");
+    counterEl.textContent = display;
+  }
+
+  randomCounter();
+</script>
+
+</body>
+
+</html>

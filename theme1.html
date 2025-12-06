@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>コードで遊ぶ30のお題</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- お題リスト用のちょっとした追加スタイル（お好みで style.css に移動してOK） -->
+  <style>
+    .theme-list {
+      padding-left: 1.2em;
+      margin-top: 0;
+      font-size: 14px;
+    }
+
+    .theme-list li+li {
+      margin-top: 8px;
+    }
+
+    .theme-title {
+      font-weight: bold;
+    }
+
+    .theme-desc {
+      margin: 2px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site">
+    <header>
+ <div class="logo">
+  <a href="index.html">
+    <img src="image/logo.png" alt="site logo">
+  </a>
+</div>
+        <p>30 Creative Coding Prompts</p>
+    </header>
+
+    <div class="main-wrapper">
+      <!-- ナビカラム -->
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">about</a></li>
+          <li><a href="theme1.html" class="current">コードで遊ぶ30のお題</a></li>
+          <li><a href="theme2.html">テーマで遊ぶ30のお題</a></li>
+        </ul>
+
+        <div class="box">
+          <div>counter</div>
+          <div id="counter" class="counter">000000</div>
+        </div>
+
+        <div class="box">
+          <div>web拍手</div>
+          <button id="clap-button">ぱちぱちする</button>
+          <div id="clap-message" style="margin-top:4px;font-size:11px;"></div>
+        </div>
+<!-- 
+        <div class="box">
+          <div>link</div>
+          <div class="banners">
+            <a href="https://example.com" target="_blank">
+              <img src="banner1.png" alt="example banner 1">
+            </a>
+            <a href="https://example.org" target="_blank">
+              <img src="banner2.png" alt="example banner 2">
+            </a>
+          </div>
+        </div> -->
+      </nav>
+
+      <!-- 本文カラム -->
+           <div class="main-content"></div>
+      <article>
+        <h1>◆ コードで遊ぶ30のお題</h1>
+        <p>クリエイティブコーディングのネタとして使える30のお題セットです。<br>技法・表現・アルゴリズムがテーマです。<br>好きな順番で使ったり、1日1個ずつ進めたり、ご自由にどうぞ。</p>
+<br>
+
+        <ol class="theme-list">
+          <li>
+            <div class="theme-title">点と線</div>
+            <p class="theme-desc">画面上のランダムな位置から線を引くことで、美しい模様や構造物を作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">シンプルな動き</div>
+            <p class="theme-desc">基本的な物理法則を使って、画面上のオブジェクトを動かする。</p>
+          </li>
+          <li>
+            <div class="theme-title">自然を模倣する</div>
+            <p class="theme-desc">雲、山、水などの自然の風景や現象を再現する。</p>
+          </li>
+          <li>
+            <div class="theme-title">音の視覚化</div>
+            <p class="theme-desc">音楽や音を視覚的に表現する。</p>
+          </li>
+          <li>
+            <div class="theme-title">幾何学的パターン</div>
+            <p class="theme-desc">幾何学的な形やパターンの繰り返しを表示する。</p>
+          </li>
+          <li>
+            <div class="theme-title">インタラクティブアート</div>
+            <p class="theme-desc">ユーザーの入力や動きに反応する作品を作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">カラーパレット探査</div>
+            <p class="theme-desc">限られたカラーパレットで美しい作品を制作する。</p>
+          </li>
+          <li>
+            <div class="theme-title">3Dで遊ぶ</div>
+            <p class="theme-desc">3Dの空間や形を使って、視覚に訴える作品を作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">アニメーションループ</div>
+            <p class="theme-desc">連続的にループするアニメーションを作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">テキストで遊ぶ</div>
+            <p class="theme-desc">言葉や文字を使ってビジュアルアートを作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">フラクタル</div>
+            <p class="theme-desc">フラクタル・アートを制作するために、再帰的なパターンや図形を利用する。</p>
+          </li>
+          <li>
+            <div class="theme-title">日常生活のオブジェクト</div>
+            <p class="theme-desc">日常生活で目にする物体や現象をコードで再現する。</p>
+          </li>
+          <li>
+            <div class="theme-title">過去のアートのリミックス</div>
+            <p class="theme-desc">既存の有名なアート作品からインスピレーションを得て、新鮮な解釈をする。</p>
+          </li>
+          <li>
+            <div class="theme-title">紙のような質感</div>
+            <p class="theme-desc">紙の質感や手描きのドローイングを視覚的に模倣する。</p>
+          </li>
+          <li>
+            <div class="theme-title">影と光</div>
+            <p class="theme-desc">光と影を使ってビジュアルに奥行きを出す。</p>
+          </li>
+          <li>
+            <div class="theme-title">GIFアート</div>
+            <p class="theme-desc">アニメーションGIFを作成する。</p>
+          </li>
+          <li>
+            <div class="theme-title">古いコンピュータグラフィックスを模倣する</div>
+            <p class="theme-desc">80年代や90年代のレトロなコンピューターグラフィックスを模倣する。</p>
+          </li>
+          <li>
+            <div class="theme-title">抽象アート</div>
+            <p class="theme-desc">未定義の形や色を使って抽象的な作品を作る。</p>
+          </li>
+          <li>
+            <div class="theme-title">マウストレイル</div>
+            <p class="theme-desc">ユーザーのマウスの動きに応じてパターンや軌跡を表示する。</p>
+          </li>
+
+          <li>
+            <div class="theme-title">ノイズとゆらぎ</div>
+            <p class="theme-desc">
+              Perlin noise などを使って、有機的な動きや形を表現する。
+            </p>
+          </li>
+          <li>
+            <div class="theme-title">アートの進化</div>
+            <p class="theme-desc">一つの芸術作品が時間とともに変化し、進化するようにする。</p>
+          </li>
+          <li>
+            <div class="theme-title">鏡の対称性</div>
+            <p class="theme-desc">画面を分割し、それぞれに対称的なビジュアルを表示する。</p>
+          </li>
+          <li>
+            <div class="theme-title">波と波紋</div>
+            <p class="theme-desc">波やさざ波のような水面の動きを模倣する。</p>
+          </li>
+          <li>
+            <div class="theme-title">24. 混沌から秩序へ</div>
+            <p class="theme-desc">混沌とした動きや形から、整然としたパターンへと移行する。</p>
+          </li>
+          <li>
+            <div class="theme-title">イラストレーションを組み合わせる</div>
+            <p class="theme-desc">手描きのイラストとコードを組み合わせる。</p>
+          </li>
+          <li>
+            <div class="theme-title">歴史的アートスタイル</div>
+            <p class="theme-desc">過去の芸術運動や様式を参照した作品を制作する。</p>
+          </li>
+          <li>
+            <div class="theme-title">レイヤリング</div>
+            <p class="theme-desc">複数のレイヤーを重ね合わせ、ビジュアルに奥行きを出す。</p>
+          </li>
+          <li>
+            <div class="theme-title">時間の経過</div>
+            <p class="theme-desc">1日や1年など、特定の時間の経過を表現する。</p>
+          </li>
+
+          <li>
+            <div class="theme-title">視覚のトリック</div>
+            <p class="theme-desc">
+              錯視・視覚効果を利用し、見る角度や見方で印象が変わる作品を作る。
+              線やパターンの配置を工夫して、動いて見えたり歪んで見えたりする表現を試す。
+            </p>
+          </li>
+
+
+          <li>
+            <div class="theme-title">フィナーレ</div>
+            <p class="theme-desc">その月の学びと成果を最終的なビジュアル作品にまとめる。</p>
+          </li>
+        </ol>
+      </article>
+    </div>
+        </div>
+
+    <footer>
+      &copy; 2025 @senbaku
+    </footer>
+  </div>
+
+  <script>
+    // カウンター
+    (function () {
+      var key = "simple_counter";
+      var n = parseInt(localStorage.getItem(key) || "0", 10) + 1;
+      localStorage.setItem(key, n);
+      var s = String(n).padStart(6, "0");
+      document.getElementById("counter").textContent = s;
+    })();
+
+    // web拍手もどき
+    document.getElementById("clap-button").addEventListener("click", function () {
+      var msg = document.getElementById("clap-message");
+      msg.textContent = "ぱちぱちありがとう！";
+    });
+  </script>
+  <script>
+  function randomCounter() {
+    const counterEl = document.getElementById("counter");
+
+    // 下4桁の通常ランダム（0〜9999）
+    let n = Math.floor(Math.random() * 10000);
+
+    // 1/200 の確率で「当たり数字」
+    if (Math.random() < 1/200) {
+      const special = [
+        777, 888, 999,
+        1111, 2222, 3333,
+        4444, 5555, 6666,
+        7777, 8888, 9999
+      ];
+      n = special[Math.floor(Math.random() * special.length)];
+
+      // 当たり演出
+      counterEl.classList.add("special-hit");
+      setTimeout(() => counterEl.classList.remove("special-hit"), 1200);
+    }
+
+    // 表示は「00 + 4桁の数字」
+    const display = "00" + String(n).padStart(4, "0");
+    counterEl.textContent = display;
+  }
+
+  randomCounter();
+</script>
+
+</body>
+
+</html>

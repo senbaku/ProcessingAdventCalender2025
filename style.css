@@ -1,0 +1,207 @@
+/* style.css */
+
+:root {
+  --bg: #f4f1ea;
+  --frame-bg: #ffffff;
+  --fg: #333;
+  --accent: #ff9999;
+  --border: #c0b9a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: #ff6666; /* 好きな色に */
+}
+
+body {
+  margin: 0;
+  font-family: "MS PGothic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  cursor: crosshair;
+}
+.main-content {
+  padding-left: 2rem; /* ← ここを調整するだけ */
+}
+.theme-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.8;         /* 文字の上下も広がり読みやすく */
+}
+.theme-title {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  /* color: #ff66aa;  ピンクでリンク色に寄せる */
+}
+
+.theme-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #555; 
+}
+
+.site {
+  width: 760px;
+  margin: 16px auto;
+  border: 2px solid var(--border);
+  background: var(--frame-bg);
+}
+
+/* ヘッダー */
+header {
+  border-bottom: 1px dashed var(--border);
+  padding: 8px 16px 4px;
+  text-align: center;
+}
+
+/* .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 4px;
+} */
+.logo img {
+  width: 200px;
+  height: auto;
+}
+.logo,
+.logo a,
+.logo img {
+
+  cursor: grab;
+  /* background-color: #c8e0f1;  */
+}
+
+.site-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* メイン2カラム */
+.main-wrapper {
+  display: flex;
+  padding: 8px 16px 16px;
+  gap: 12px;
+}
+
+/* ナビ */
+nav {
+  width: 180px;
+  font-size: 13px;
+}
+
+nav h2 {
+  margin: 0 0 6px;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 10px;
+}
+
+nav li + li {
+  margin-top: 4px;
+}
+
+nav a {
+  display: block;
+  padding: 4px 6px;
+  text-decoration: none;
+  color: var(--fg);
+  border-radius: 3px;
+}
+
+nav a:hover {
+  background: #ffecec;
+}
+
+/* 今いるページ用 */
+nav a.current {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* カウンター・拍手機能など小箱 */
+.box {
+  border: 1px solid var(--border);
+  padding: 4px 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  background: #fffdf8;
+}
+
+.counter {
+  font-family: "Courier New", monospace;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+/* 本文 */
+article {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+article h1 {
+  margin-top: 0;
+  font-size: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* リンクバナー */
+.banners {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.banners  img {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid var(--border);
+}
+
+/* フッター */
+footer {
+  border-top: 1px dashed var(--border);
+  padding: 4px 10px;
+  font-size: 11px;
+  text-align: right;
+}
+
+/* スマホ用（横幅狭いとき） */
+@media (max-width: 800px) {
+  .site {
+    width: auto;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+  nav {
+    width: auto;
+  }
+}
+.bmc-wrap {
+  transform: scale(0.6);
+  transform-origin: top left; /* 左上から縮小 */
+  margin-top: 8px;
+  margin-bottom: -4px; /* 縮小した分の余白調整 */
+}
