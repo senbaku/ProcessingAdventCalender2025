@@ -24,7 +24,9 @@ body {
   cursor: crosshair;
 }
 .main-content {
-  padding-left: 2rem; /* ← ここを調整するだけ */
+  padding-left: 2rem; 
+    box-sizing: border-box;
+  overflow-wrap: break-word; 
 }
 .theme-list li {
   margin-bottom: 0.8rem;
