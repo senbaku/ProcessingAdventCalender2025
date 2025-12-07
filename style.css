@@ -187,18 +187,23 @@ footer {
 }
 
 /* スマホ用（横幅狭いとき） */
-@media (max-width: 800px) {
-  .site {
-    width: auto;
-    margin: 0;
-    border: none;
-    border-radius: 0;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* ← 2カラム → 1カラムに */
+  align-items: center;
   }
-  .main-wrapper {
-    flex-direction: column;
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
   }
-  nav {
-    width: auto;
+
+  .main-content {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;  /* 読みやすく調整 */
+    text-align: center;
   }
 }
 .bmc-wrap {
